@@ -14,6 +14,7 @@
     <link href="<?php echo base_url() ?>/css/rada_style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -122,17 +123,74 @@
             </div>
         </section>
         <section id="footer" class="bg-black">
-            <div class="container relative pt-8 pb-16 mx-auto flex flex-wrap items-center justify-between" style="min-height: 75vh;">
-                <div class="w-full md:w-1/3">
-                    <div class="w-full text-left">
-                        {{info.contact_info.type}}
-                    </div>
-
+            <div class="w-full md:1/2 mx-auto mb-12 pt-12 justify-center flex flex-wrap indent-2 text-white gap-4">
+                <div class="block ">
+                    <i class="fa-brands fa-facebook text-white text-4xl"></i>
+                    Like us
                 </div>
                 <div>
-
+                    <i class="fa-brands fa-instagram  text-white text-4xl"></i>
+                    Follow us
                 </div>
+
+
+
             </div>
+            <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
+                <div class=" block w-full   relative">
+                    <div class=" h-full relative mx-auto   ">
+                        <div class="h-full justify-start my-16   mb-5 ">
+                            <h1 class="text-gray-rada text-start bebas-font uppercase text-3xl ">
+                                {{info.locations[0].title}}
+                            </h1>
+                            <p class="montserrat-font text-start  text-lg  mr-24 pr-10 text-wrap text-white  mb-8">
+                                {{info.locations[0].address}}
+                            </p>
+                            <h1 class="text-gray-rada text-start bebas-font uppercase text-3xl ">
+                                {{info.contact_info[0].type}}
+                            </h1>
+                            <p class="montserrat-font text-start  text-lg  mr-24 pr-10 text-wrap text-white mb-8  ">
+                                {{info.contact_info[0].info}}
+                            </p>
+                            <h1 class="text-gray-rada text-start bebas-font uppercase text-3xl ">
+                                {{info.contact_info[1].type}}
+                            </h1>
+                            <p class="montserrat-font text-start  text-lg  mr-24 pr-10 text-wrap text-white  ">
+                                {{info.contact_info[1].info}}
+                            </p>
+                            <pre class="font-sans text-white font-bold text-bg indent-2 tracking-widest">
+          </div>
+        </div>
+      </div>
+      <div   class=" block w-full relative font-sans ">
+        <div class="flex  relative mx-auto justify-center">
+          <div id="contacto" class="sm:mx-20 justify-center my-16 flex flex-wrap ">
+
+              <form ref="form" @submit.prevent="sendEmail()">
+                <div class="form-group mb-4  ">
+                  <input ref="nombre" type="text" class="w-48 md:w-96 px-4 py-2 form-control rounded " name='nombre' id="nombre" v-bind:placeholder="placeholders.name" required>
+                </div>
+                <div class="form-group mb-4">
+                  <input ref="email" type="email" class="w-96 px-4 py-2 form-control rounded " name='email' id="email" v-bind:placeholder="placeholders.email" required>
+                </div>
+                <div class="form-group mb-4">
+                  <input ref="telefono" type="tel" class="w-96 px-4 py-2 form-control rounded "  name='telefono' id="telefono" v-bind:placeholder="placeholders.phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                  <br><label class="text-lg font-semibold">Formato: 664-123-4567</label>
+                </div>
+                <div class="form-group mb-4">
+                  <textarea ref="mensaje" type="text" class="w-96 h-40 px-4 py-2 form-control rounded " name='mensaje' id="mensaje" rows="3" v-bind:placeholder="placeholders.comments"  required></textarea>
+                </div>
+                <div class="form-group mb-4">
+                  <input ref="sede" readonly class="hidden w-96 px-4 py-2 form-control rounded" type="text" name='sede' id="sede" value="Baja California Norte"  required></textarea>
+                </div>
+                <input  class="rounded w-28 px-4 py-2 bg-red-rada text-white" v-bind:value="Send" type="submit"  />
+                <br><label id="msg" ref="msg" class="text-lg font-semibold"></label>
+              </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
         </section>
     </div>
 
@@ -167,23 +225,41 @@
                     es: es_lang,
                     en: en_lang
                 },
-
+                inputText:{
+                    en:{
+                      name:"Your name",
+                      email:"Email",
+                      phone:"Phone",
+                      comments:"Your message",
+                      button:"Send",  
+                    },
+                    es:{
+                        name:"Tú nombre",
+                      email:"Dirección de correo",
+                      phone:"Teléfono",
+                      comments:"Mensaje",
+                      button:"Enviar",    
+                    }
+                },
+                placeholders:null,
                 info: null,
             }
         },
         beforeMount() {
             this.info = this.languages.en;
-
+            this.placeholders=this.inputText.en;
         },
         methods: {
             change_lang(lang) {
                 if (lang == 'en') {
                     this.default_language = 'es';
                     this.info = this.languages.es;
+                    this.placeholders=this.inputText.es;
 
                 } else {
                     this.default_language = 'en';
                     this.info = this.languages.en;
+                    this.placeholders=this.inputText.en;
                 }
             }
         }
