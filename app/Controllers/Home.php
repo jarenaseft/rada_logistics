@@ -10,10 +10,10 @@ class Home extends BaseController
 {
     public function index()
     {
-       
+
 
             echo view('home/index');
-        
+
 
 
 
@@ -21,14 +21,21 @@ class Home extends BaseController
 
     }
 
-    
+    public function about_me()
+    {
+
+
+            echo view('about_me/about_me');
+
+
+
+
+        //return view('sidebar');
+
+    }
 
 
 
 
     //eliminaCiclo
 }
-
-
-
-

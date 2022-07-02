@@ -4,7 +4,11 @@
         "Nosotros",
         "Servicios"
     ],
-    "about-us": "Somos una empresa de tramporte que venimos ofreciendo servicio de calidad alrededor de 7 años y optimizando los recursos y procesos de lógistica, con el mejor equipo de trabajo.",
+    "aboutus": {
+        "heading":"ACERCA DE NOSOTROS",
+        "text":"Somos una empresa de tramporte que venimos ofreciendo servicio de calidad alrededor de 7 años y optimizando los recursos y procesos de lógistica, con el mejor equipo de trabajo."
+    },
+
     "philosophy": {
         "heading": "NUESTRA FILOSOFÍA",
         "text": "Mejora continua, entendida como la orientación y ejecución permanente de la iniciativa / innovación / eficiencia y aplicación sistemática del PDCA (\"Plan Do Check Act\")."
@@ -46,8 +50,15 @@
             }
         ]
     },
-    "mission": "Ser una empresa de logística líder en el sector, con el propósito de satisfacer permanentemente las expectativas de empleados, clientes, accionistas y sociedad.",
-    "vision": "Ser percibido como una empresa que satisface cualquier necesidad logística en el mercado Local y Nacional.",
+
+    "mission": {
+        "heading":"MISIÓN",
+        "text":"Ser una empresa de logística líder en el sector, con el propósito de satisfacer permanentemente las expectativas de empleados, clientes, accionistas y sociedad."
+    },
+    "vision": {
+        "heading":"VISIÓN",
+        "text":"Ser percibido como una empresa que satisface cualquier necesidad logística en el mercado Local y Nacional."
+    },
     "equipment": {
         "title": "Equipo",
         "data": [
@@ -84,15 +95,18 @@
     "locations": [
         {
             "address": "Playas de Rosarito, Blvd. Benito Juárez, Col. Lienzo Charro, No. 202",
-            "name": "RADA OFFICE"
+            "name": "RADA OFFICE",
+            "title": "UBICACIÓN"
         },
         {
             "address": "Calle Maquiladoras 1275, CD industrial, Tijuana BC",
-            "name": "RADA Main Yard"
+            "name": "RADA Main Yard",
+            "title": "UBICACIÓN"
         },
         {
             "address": "Camino Viejo a Tecate No. 300 Infonavit Alba Roja ",
-            "name": "RADA Secondary Yard"
+            "name": "RADA Secondary Yard",
+            "title": "UBICACIÓN"
         }
     ],
     "clients": [
