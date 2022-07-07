@@ -1,8 +1,14 @@
 {
     "heading": "Tu carga siempre segura y a tiempo",
     "menu": [
-        "Nosotros",
-        "Servicios"
+        {
+            "name":"Nosotros",
+            "link":"about_me"  
+          },
+          {
+              "name":"Servicios",
+              "link":"#"  
+            }
     ],
     "aboutus": {
         "heading":"ACERCA DE NOSOTROS",

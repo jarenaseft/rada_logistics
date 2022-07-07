@@ -1,8 +1,14 @@
 {
   "heading" : "Your load always safe and on time",
   "menu":[
-    "About us",
-    "Services"
+    {
+      "name":"About us",
+      "link":"about_me"  
+    },
+    {
+        "name":"Services",
+        "link":"#"  
+      }
 ],
 "aboutus": {
     "heading":"ABOUT US",

@@ -44,7 +44,7 @@
                 <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-white" id="nav-content">
                     <ul class="list-reset lg:flex justify-end flex-1 items-center bebas-font">
                         <li class="mr-3" v-for="option in info.menu">
-                            <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">{{option}}</a>
+                            <a class="inline-block py-2 px-4 text-black font-bold no-underline" :href="url+'/'+option.link">{{option.name}}</a>
                         </li>
 
                         <li class="mr-3">
