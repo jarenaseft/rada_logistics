@@ -74,3 +74,70 @@
 
 
 </body>
+
+<script type="module">
+    import en_lang from '<?php echo base_url() ?>/json_info/english.json' assert {
+        type: "json"
+    };
+    import es_lang from '<?php echo base_url() ?>/json_info/spanish.json' assert {
+        type: "json"
+    };
+
+
+    const {
+        createApp
+    } = Vue;
+    const application = createApp({
+        data() {
+            return {
+                url: "<?php echo base_url(); ?>",
+                default_language: 'en',
+                default_language_index: 0,
+                languages: {
+                    es: es_lang,
+                    en: en_lang
+                },
+                inputText: {
+                    en: {
+                        name: "Your name",
+                        email: "Email",
+                        phone: "Phone",
+                        comments: "Your message",
+                        button: "Send",
+                    },
+                    es: {
+                        name: "Tú nombre",
+                        email: "Dirección de correo",
+                        phone: "Teléfono",
+                        comments: "Mensaje",
+                        button: "Enviar",
+                    }
+                },
+                placeholders: null,
+                info: null,
+            }
+        },
+        beforeMount() {
+            this.info = this.languages.en;
+            this.placeholders = this.inputText.en;
+        },
+        methods: {
+            change_lang(lang) {
+                if (lang == 'en') {
+                    this.default_language = 'es';
+                    this.info = this.languages.es;
+                    this.placeholders = this.inputText.es;
+
+                } else {
+                    this.default_language = 'en';
+                    this.info = this.languages.en;
+                    this.placeholders = this.inputText.en;
+                }
+            }
+        }
+
+    });
+    application.mount('#app')
+</script>
+
+</html>

@@ -11,7 +11,7 @@ class Home extends BaseController
     public function index()
     {
 
-
+        echo view('templates/header');
             echo view('home/index');
             echo view('templates/footer');
 
@@ -24,7 +24,7 @@ class Home extends BaseController
     public function about_me()
     {
 
-
+        echo view('templates/header');
             echo view('about_me/about_me');
             echo view('templates/footer');
 
