@@ -13,7 +13,7 @@ class Home extends BaseController
 
 
             echo view('home/index');
-
+            echo view('templates/footer');
 
 
 
@@ -26,7 +26,7 @@ class Home extends BaseController
 
 
             echo view('about_me/about_me');
-
+            echo view('templates/footer');
 
 
 

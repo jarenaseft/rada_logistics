@@ -85,7 +85,7 @@
           </div>
         </div>
 
-        <div class="w-full h-full  font-bold text-xl   mx-auto  ">
+        <div class="w-full h-full  font-bold text-xl   mx-auto mb-12 ">
           <div class="flex w-full h-full">
 
             <div id="vision" class="bg-gray-rada  w-1/2    p-14 ">
@@ -111,7 +111,7 @@
 
   </div>
     </div>
-</body>
+
 
 
 
