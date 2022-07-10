@@ -1,7 +1,7 @@
 
 
         <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
-            <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url(<?php echo base_url() ?>/img/trucks.jpg)">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url(<?php echo base_url() ?>/img/home.jpeg)">
                 <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
             </div>
             <div class="container relative mx-auto">
@@ -33,7 +33,7 @@
         </section>
         <section id="philosophy" class="bg-white">
             <div class="relative pt-8 pb-16 flex  items-center justify-center" style="min-height: 75vh;">
-                <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url(<?php echo base_url() ?>/img/trucks3.jpeg)">
+                <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url(<?php echo base_url() ?>/img/philosophy.jpeg)">
                     <span id="blackOverlay" class="w-full h-full absolute opacity-80 bg-gray-rada"></span>
                 </div>
                 <div class="container relative ml-24 mr-24">
