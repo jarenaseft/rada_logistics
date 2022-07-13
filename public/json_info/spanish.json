@@ -154,5 +154,14 @@
             "type": "Facebook",
             "info": "facebook.com/rada_logistics"
         }
-    ]
+    ],
+    "contact_text":{
+        "heading": "Contacto",
+        "contact_form": {
+            "heading": "¡Mantente en contacto!",
+            "text":"Contactanos para una cotización o si necesitas ayuda"
+        }
+    
+    }
+  
 }

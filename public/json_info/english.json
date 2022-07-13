@@ -106,17 +106,20 @@
 
         "address":"Playas de Rosarito, Blvd. Benito Juárez, Col. Lienzo Charro, No. 202",
         "name": "RADA OFFICE",
-        "title": "LOCATION"
+        "title": "LOCATION",
+        "image":"radaTruck1.jpeg"
     },
     {
        "address":"Calle Maquiladoras 1275, CD industrial, Tijuana BC",
        "name": "RADA Main Yard",
-       "title": "LOCATION"
+       "title": "LOCATION",
+       "image":"radaTruck2.jpeg"
     },
     {
         "address":"Camino Viejo a Tecate No. 300 Infonavit Alba Roja ",
         "name": "RADA Secondary Yard",
-        "title": "LOCATION"
+        "title": "LOCATION",
+        "image":"R2.jpeg"
      }
 ],
 "clients":[
@@ -157,5 +160,13 @@
         "type": "Facebook",
         "info": "facebook.com/rada_logistics"
     }
-]
+],
+"contact_text":{
+    "heading": "Contact",
+    "contact_form": {
+        "heading": "Get in touch!",
+        "text":"Contact us for a quote or help"
+    }
+   
+}
 }

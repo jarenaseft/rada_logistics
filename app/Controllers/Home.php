@@ -34,6 +34,19 @@ class Home extends BaseController
 
     }
 
+    public function contact()
+    {
+
+        echo view('templates/header');
+            echo view('contact/index');
+            echo view('templates/footer');
+
+
+
+        //return view('sidebar');
+
+    }
+
 
 
 
