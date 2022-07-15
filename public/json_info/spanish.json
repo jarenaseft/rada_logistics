@@ -3,11 +3,11 @@
     "menu": [
         {
             "name":"Nosotros",
-            "link":"about_me"  
+            "link":"about_me"
           },
           {
               "name":"Servicios",
-              "link":"#"  
+              "link":"#"
             }
     ],
     "aboutus": {
@@ -100,17 +100,17 @@
     ],
     "locations": [
         {
-            "address": "Playas de Rosarito, Blvd. Benito Juárez, Col. Lienzo Charro, No. 202",
+            "address": "Playas de Rosarito, Blvd. Benito Juárez, Col. Lienzo Charro, No. 202, Tijuana Baja California",
             "name": "RADA OFFICE",
             "title": "UBICACIÓN"
         },
         {
-            "address": "Calle Maquiladoras 1275, CD industrial, Tijuana BC",
+            "address": "Calle Maquiladoras 1275, CD industrial, Tijuana Baja California",
             "name": "RADA Main Yard",
             "title": "UBICACIÓN"
         },
         {
-            "address": "Camino Viejo a Tecate No. 300 Infonavit Alba Roja ",
+            "address": "Camino Viejo a Tecate No. 300 Infonavit Alba Roja, Tijuana Baja California ",
             "name": "RADA Secondary Yard",
             "title": "UBICACIÓN"
         }
@@ -143,7 +143,7 @@
     ],
     "contact_info": [
         {
-            "type": "Telefono",
+            "type": "Teléfono",
             "info": "(661) 850 33 21"
         },
         {
@@ -161,7 +161,25 @@
             "heading": "¡Mantente en contacto!",
             "text":"Contactanos para una cotización o si necesitas ayuda"
         }
-    
-    }
-  
+
+    },
+      "contact_information": [
+          {
+              "type": "Nombre",
+              "info": "Tu nombre"
+          },
+          {
+              "type": "Correo electrónico",
+              "info": "Tu correo electrónico"
+          },
+          {
+              "type": "Teléfono",
+              "info": "Tú teléfono"
+          },
+          {
+              "type": "Mensaje",
+              "info": "Escribe un mensaje"
+          }
+      ]
+
 }

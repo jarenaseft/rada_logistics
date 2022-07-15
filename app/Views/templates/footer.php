@@ -14,8 +14,8 @@
 
             </div>
             <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
-                <div class=" block w-full   relative">
-                    <div class=" h-full relative mx-auto   ">
+                <div class="sm:px-12 block w-full   relative">
+                    <div class=" h-full relative mx-auto sm:mx-20  ">
                         <div class="h-full justify-start ">
                             <h1 class="text-gray-rada text-start bebas-font uppercase text-3xl ">
                                 {{info.locations[0].title}}
@@ -32,7 +32,7 @@
                             <h1 class="text-gray-rada text-start bebas-font uppercase text-3xl ">
                                 {{info.contact_info[1].type}}
                             </h1>
-                            <p class="montserrat-font text-start  text-lg  mr-24 pr-10 text-wrap text-white  ">
+                            <p class="montserrat-font text-start  text-lg  mr-24 pr-10 text-wrap text-white mb-12 ">
                                 {{info.contact_info[1].info}}
                             </p>
                         </div>
@@ -44,22 +44,19 @@
 
                             <form ref="form" @submit.prevent="sendEmail()">
                                 <div class="form-group mb-4  ">
-                                    <input ref="nombre" type="text" class="w-48 md:w-96 px-4 py-2 form-control rounded " name='nombre' id="nombre" v-bind:placeholder="placeholders.name" required>
+                                    <input ref="nombre" type="text" class="w-96 md:w-96 px-4 py-2 form-control rounded " name='nombre' id="nombre" v-bind:placeholder="placeholders.name" required>
                                 </div>
                                 <div class="form-group mb-4">
                                     <input ref="email" type="email" class="w-96 px-4 py-2 form-control rounded " name='email' id="email" v-bind:placeholder="placeholders.email" required>
                                 </div>
                                 <div class="form-group mb-4">
                                     <input ref="telefono" type="tel" class="w-96 px-4 py-2 form-control rounded " name='telefono' id="telefono" v-bind:placeholder="placeholders.phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                                    <br><label class="text-lg font-semibold">Formato: 664-123-4567</label>
+
                                 </div>
                                 <div class="form-group mb-4">
                                     <textarea ref="mensaje" type="text" class="w-96 h-40 px-4 py-2 form-control rounded " name='mensaje' id="mensaje" rows="3" v-bind:placeholder="placeholders.comments" required></textarea>
                                 </div>
-                                <div class="form-group mb-4">
-                                    <input ref="sede" readonly class="hidden w-96 px-4 py-2 form-control rounded" type="text" name='sede' id="sede" value="Baja California Norte" required></textarea>
-                                </div>
-                                <input class="rounded w-28 px-4 py-2 bg-red-rada text-white" v-bind:value="Send" type="submit" />
+                                <input class="rounded w-28 px-4 py-2 bg-red-rada text-white" v-bind:value="button" type="submit" />
                                 <br><label id="msg" ref="msg" class="text-lg font-semibold"></label>
                             </form>
 
@@ -103,6 +100,7 @@
                         email: "Email",
                         phone: "Phone",
                         comments: "Your message",
+                        message: "Type a message",
                         button: "Send",
                     },
                     es: {
@@ -110,6 +108,7 @@
                         email: "Dirección de correo",
                         phone: "Teléfono",
                         comments: "Mensaje",
+                        message: "Escribe un mensaje",
                         button: "Enviar",
                     }
                 },
