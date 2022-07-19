@@ -160,7 +160,8 @@
         "contact_form": {
             "heading": "¡Mantente en contacto!",
             "text":"Contactanos para una cotización o si necesitas ayuda"
-        }
+        },
+        "btn": "Enviar"
 
     },
       "contact_information": [

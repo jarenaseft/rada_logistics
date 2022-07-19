@@ -166,7 +166,8 @@
     "contact_form": {
         "heading": "Get in touch!",
         "text":"Contact us for a quote or help"
-    }
+    },
+    "btn":"Send"
   },
     "contact_information": [
         {

@@ -13,7 +13,7 @@
 
     </div>
     <div class="w-full h-full text-center justify-center font-bold text-xl   mx-auto place-items-center my-12 ">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-9 w-full h-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-14 h-full">
 
             <div v-for="location in info.locations" class="mx-auto flex w-96 flex-col justify-center bg-white rounded-xl shadow-xl shadow-slate-300/60">
                 <!-- img -->
@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <div class="w-full h-full montserrat-font mx-auto mb-12 ">
+    <div class="w-full h-full montserrat-font mx-auto mb-6 mt-12">
         <div class="md:flex font-bold text-2xl w-full h-full text-center justify-center mb-3">
             {{info.contact_text.contact_form.heading}}
 
@@ -39,29 +39,33 @@
         </div>
     </div>
 
-    <div  class="mx-auto flex w-2/3 flex-col justify-center bg-gray-100 rounded-xl shadow-xl shadow-slate-300/60 mb-12">
+    <div  class="mx-auto flex wfull md:w-4/5 flex-col justify-center bg-gray-100 rounded-xl shadow-xl shadow-slate-300/60 mb-12">
       <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-9 w-full h-full">
 
-        <div class="form-group md:mb-20 montserrat-fon ">
+        <div class="form-group montserrat-font">
             <label class="text-lg font-semibold  ">{{info.contact_information[0].type}}
             <br>
-            <input ref="name" type="text" class="mt-4 mb-4 w-96 md:w-96 px-4 py-2 form-control rounded " name='name' id="name" v-bind:placeholder="placeholders.name" required>
+            <input ref="name" type="text" class="mt-4 mb-4 w-96 md:w-96 px-4 py-2 form-control rounded  font-light" v-model="name" name='name' id="name" v-bind:placeholder="placeholders.name" required>
             <br>
             <label class="text-lg font-semibold  ">{{info.contact_information[1].type}}
             <br>
-            <input ref="mail" type="text" class="mt-4 mb-4 w-96 md:w-96 px-4 py-2 form-control rounded " name='mail' id="mail" v-bind:placeholder="placeholders.email" required>
+            <input ref="mail" type="text" class="mt-4 mb-4 w-96 md:w-96 px-4 py-2 form-control rounded font-light " v-model="email" name='mail' id="mail" v-bind:placeholder="placeholders.email" required>
             <br>
             <label class="text-lg font-semibold  ">{{info.contact_information[2].type}}
             <br>
-            <input ref="phone" type="text" class="mt-4 w-96 md:w-96 px-4 py-2 form-control rounded " name='phone' id="phone" v-bind:placeholder="placeholders.phone" required>
+            <input ref="phone" type="text" class="mt-4 w-96 md:w-96 px-4 py-2 form-control rounded font-light" v-model="phone" name='phone' id="phone" v-bind:placeholder="placeholders.phone" required>
 
         </div>
-        <div class="form-group mb-20">
+        <div class="form-group mb-5">
           <label class="text-lg font-semibold  ">{{info.contact_information[3].type}}
           <br>
-          <input ref="message" type="text" class="mt-4 w-96 md:w-96 h-5/6 mb-4  px-4 py-2 form-control rounded " name='message' id="message" v-bind:placeholder="placeholders.message" required>
-          <input class="rounded w-28 px-4  py-2 bg-black text-white" v-bind:value="Send" type="submit" />
+          <textarea ref="message" type="text" class="mt-4 w-96 md:w-96 h-5/6 mb-4  px-4 py-2 form-control rounded font-light " v-model="message" name='message' id="message" v-bind:placeholder="placeholders.message" required></textarea>
+        
         </div>
+        <div>
+        <input class="rounded w-28 px-4  py-2 bg-black text-white text-center cursor-pointer" v-bind:value="info.contact_text.btn" type="button" v-on:click="sendMessage()" />
+        </div>
+
 
       </div>
     </div>

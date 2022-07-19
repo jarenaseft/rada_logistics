@@ -35,6 +35,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('about_me', 'Home::about_me');
 $routes->get('contact', 'Home::contact');
+$routes->get('email', 'Home::email');
+$routes->post('sendEmail', 'ContactController::sendEmail');
 $routes->get('login', 'Home::login');
 $routes -> get('logout','Home::log_out');
 $routes->get('evento_nuevo', 'Eventos::nuevo_evento');

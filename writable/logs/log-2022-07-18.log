@@ -1,0 +1,105 @@
+CRITICAL - 2022-07-18 19:38:13 --> Undefined variable $tel
+#0 /Applications/MAMP/htdocs/rada/app/Views/contact/email_template.php(384): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 384)
+#1 /Applications/MAMP/htdocs/rada/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/rada/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/rada/system/Common.php(1097): CodeIgniter\View\View->render('contact/email_t...', Array, true)
+#4 /Applications/MAMP/htdocs/rada/app/Controllers/Home.php(55): view('contact/email_t...', Array)
+#5 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\Home->email()
+#6 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-18 20:45:52 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:46:12 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:46:15 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:46:34 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:47:08 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:47:55 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:48:17 --> Object of class CodeIgniter\Email\Email could not be converted to string
+#0 /Applications/MAMP/htdocs/rada/system/View/View.php(214): include()
+#1 /Applications/MAMP/htdocs/rada/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/rada/system/Common.php(1097): CodeIgniter\View\View->render('contact/email_t...', Array, true)
+#3 /Applications/MAMP/htdocs/rada/app/Controllers/ContactController.php(40): view('contact/email_t...', Array)
+#4 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#5 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#6 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-07-18 20:49:44 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:51:16 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:51:42 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:51:55 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:52:43 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:53:49 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:53:58 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-18 20:54:31 --> Call to a member function setFrom() on string
+#0 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(824): App\Controllers\ContactController->sendEmail()
+#1 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#2 /Applications/MAMP/htdocs/rada/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
