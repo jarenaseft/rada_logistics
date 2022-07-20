@@ -44,19 +44,19 @@
 
                             <form ref="form" @submit.prevent="sendEmail()">
                                 <div class="form-group mb-4  ">
-                                    <input ref="nombre" type="text" class="w-96 md:w-96 px-4 py-2 form-control rounded " name='nombre' id="nombre" v-bind:placeholder="placeholders.name" required>
+                                    <input ref="nombre" type="text" v-model="nombre" class="w-96 md:w-96 px-4 py-2 form-control rounded " name='nombre' id="nombre" v-bind:placeholder="placeholders.name" required>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <input ref="email" type="email" class="w-96 px-4 py-2 form-control rounded " name='email' id="email" v-bind:placeholder="placeholders.email" required>
+                                    <input ref="correo" type="email" v-model="correo" class="w-96 px-4 py-2 form-control rounded " name='correo' id="correo" v-bind:placeholder="placeholders.email" required>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <input ref="telefono" type="tel" class="w-96 px-4 py-2 form-control rounded " name='telefono' id="telefono" v-bind:placeholder="placeholders.phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                    <input ref="telefono" type="tel" v-model="telefono" class="w-96 px-4 py-2 form-control rounded " name='telefono' id="telefono" v-bind:placeholder="placeholders.phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 
                                 </div>
                                 <div class="form-group mb-4">
-                                    <textarea ref="mensaje" type="text" class="w-96 h-40 px-4 py-2 form-control rounded " name='mensaje' id="mensaje" rows="3" v-bind:placeholder="placeholders.comments" required></textarea>
+                                    <textarea  type="text" v-model="mensaje" class="w-96 h-40 px-4 py-2 form-control rounded " name='mensaje' id="mensaje" rows="3" v-bind:placeholder="placeholders.comments" required></textarea>
                                 </div>
-                                <input class="rounded w-28 px-4 py-2 bg-red-rada text-white" v-bind:value="button" type="submit" />
+                                <input class="rounded w-28 px-4 py-2 bg-gray-800 text-white" v-bind:value="info.contact_text.btn" type="button" v-on:click="sendMessageFooter()" />
                                 <br><label id="msg" ref="msg" class="text-lg font-semibold"></label>
                             </form>
 
@@ -147,6 +147,20 @@
                         })
                         .then(response => {
                             console.log(response.data);
+                          //  this.showAlert(response.data.msg, response.data.code);
+                            //               this.mensaje=response.msg;
+                        })
+            },
+            sendMessageFooter(){
+                axios.post(this.url+"/sendEmail", {
+                           email: this.correo,
+                           phone:this.telefono,
+                           message:this.mensaje,
+                           name:this.nombre,
+                        })
+                        .then(response => {
+                            console.log(response.data);
+                            
                           //  this.showAlert(response.data.msg, response.data.code);
                             //               this.mensaje=response.msg;
                         })
