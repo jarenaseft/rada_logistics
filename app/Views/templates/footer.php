@@ -119,6 +119,10 @@
                 phone:'',
                 name:'',
                 message:'',
+                response:{
+                   resp:null,
+                   message:"", 
+                }
             }
         },
         beforeMount() {
@@ -147,6 +151,33 @@
                         })
                         .then(response => {
                             console.log(response.data);
+                            if(response.data.resp){
+                                this.response.resp=true;
+                                if(this.lang=='en'){
+                                    this.response.message= response.data.msg;
+                                }else{
+                                    this.response.message= response.data.msj;
+                                }
+
+                                this.name ="";
+                                this.phone="";
+                                this.message="";
+                                this.email="";
+                                /**
+                                 *  email:'',
+                phone:'',
+                name:'',
+                message:'',
+                                 */
+                                
+                            }else{
+                                response.resp=false;
+                                if(this.lang=='en'){
+                                    this.response.message= response.data.msg;
+                                }else{
+                                    this.response.message= response.data.msj;
+                                }
+                            }
                           //  this.showAlert(response.data.msg, response.data.code);
                             //               this.mensaje=response.msg;
                         })

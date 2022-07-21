@@ -54,14 +54,14 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPUser="jorgearenas.19@gmail.com";
+    public $SMTPUser="atencionaclientes@radalogistics.com";
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass="yvlbhnvdnstbnewb";
+    public $SMTPPass="eswuapbjlwfgjljn";
 
     /**
      * SMTP Port

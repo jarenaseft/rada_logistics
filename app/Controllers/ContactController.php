@@ -21,7 +21,7 @@ class ContactController extends BaseController
         //var_dump($data);
         $email = \Config\Services::email();
 
-        $email->setFrom('jorgearenas.19@gmail.com', 'NOTIFICACIONES RADA');
+        $email->setFrom('atencionaclientes@radalogistics.com', 'ATENCIÓN CLIENTES RADA');
        //$this->email->from('noreply@indebc.gob.mx', 'NOTIFICACIONES RADA');
         //if($fecha < date('2020-12-12')){
         //$this->email->to('arenassapien@outlook.com');
@@ -30,12 +30,8 @@ class ContactController extends BaseController
 
         //$email->setTo('info@radalogistics.com');
         //$email->setTo('arenas.jorge@uabc.edu.mx');
-        $email->setTo('vanessa.sevilla6@gmail.com');
-        //}
-        //$this->email->to('sistemas@indebc.gob.mx');
-        //$this->email->bcc('sistemas@indebc.gob.mx');
-        //$this->email->to('arenassapien@outlook.com');
-        // $this->email->bcc('capacitaciones@indebc.gob.mx');
+        $email->setTo('jorgearenas.19@gmail.com');
+        
         $email->setSubject('CORREO CONTACTO - SITIO WEB RADA');
        // $this->email->subject('CORREO CONTACTO - SITIO WEB RADA');
 
