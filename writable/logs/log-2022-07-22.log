@@ -1,0 +1,24 @@
+CRITICAL - 2022-07-22 09:17:31 --> Too few arguments to function App\Controllers\Home::about_me(), 0 passed in /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(824): App\Controllers\Home->about_me()
+#1 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada_logistics/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-22 09:17:37 --> Too few arguments to function App\Controllers\Home::about_me(), 0 passed in /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(824): App\Controllers\Home->about_me()
+#1 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada_logistics/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-22 09:17:53 --> Too few arguments to function App\Controllers\Home::about_me(), 0 passed in /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(824): App\Controllers\Home->about_me()
+#1 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada_logistics/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-22 09:17:53 --> Too few arguments to function App\Controllers\Home::about_me(), 0 passed in /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(824): App\Controllers\Home->about_me()
+#1 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Applications/MAMP/htdocs/rada_logistics/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/rada_logistics/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

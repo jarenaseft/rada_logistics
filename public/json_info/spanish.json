@@ -101,18 +101,21 @@
     "locations": [
         {
             "address": "Playas de Rosarito, Blvd. Benito Juárez, Col. Lienzo Charro, No. 202, Tijuana Baja California",
-            "name": "RADA OFFICE",
-            "title": "UBICACIÓN"
+            "name": "OFICINA RADA - YARDA ROSARITO ",
+            "title": "UBICACIÓN",
+            "image":"radaTruck1.jpeg"
         },
         {
             "address": "Calle Maquiladoras 1275, CD industrial, Tijuana Baja California",
-            "name": "RADA Main Yard",
-            "title": "UBICACIÓN"
+            "name": "RADA Yarda Principal ",
+            "title": "UBICACIÓN",
+            "image":"radaTruck2.jpeg"
         },
         {
             "address": "Camino Viejo a Tecate No. 300 Infonavit Alba Roja, Tijuana Baja California ",
-            "name": "RADA Secondary Yard",
-            "title": "UBICACIÓN"
+            "name": "RADA Yarda Secundaria",
+            "title": "UBICACIÓN",
+            "image":"R2.jpeg"
         }
     ],
     "clients": [

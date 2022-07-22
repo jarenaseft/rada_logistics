@@ -32,9 +32,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('about_me', 'Home::about_me');
-$routes->get('contact', 'Home::contact');
+$routes->get('home/(:any)', 'Home::home/$1');
+$routes->get('about_me/(:any)', 'Home::about_me/$1');
+$routes->get('contact/(:any)', 'Home::contact/$1');
 $routes->get('email', 'Home::email');
 $routes->post('sendEmail', 'ContactController::sendEmail');
 $routes->get('login', 'Home::login');

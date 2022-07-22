@@ -34,11 +34,11 @@
         <section id="philosophy" class="bg-white">
             <div class="relative pt-8 pb-16 flex  items-center justify-center" style="min-height: 75vh;">
                 <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url(<?php echo base_url() ?>/img/philosophy.jpeg)">
-                    <span id="blackOverlay" class="w-full h-full absolute opacity-80 bg-gray-rada"></span>
+                    <span id="blackOverlay" class="w-full h-full absolute opacity-80 bg-black"></span>
                 </div>
                 <div class="container relative ml-24 mr-24">
 
-                    <div class="w-full lg:w-3/4 px-2  bebas-font font-bold text-black text-6xl my-14  drop-shadow-xl  ">
+                    <div class="w-full lg:w-3/4 px-2  bebas-font font-bold text-gray-rada text-6xl my-14  drop-shadow-xl  ">
                         {{ info.philosophy.heading }}
                     </div>
                     <div class="w-full lg:w-3/4 px-2 text-left montserrat-font text-white text-2xl drop-shadow-md  ">

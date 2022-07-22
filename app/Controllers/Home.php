@@ -10,10 +10,14 @@ class Home extends BaseController
 {
     public function index()
     {
-
+        if(isset($lang)){
+            $data["idioma"] = $lang; 
+         }else{
+             $data["idioma"] = ""; 
+         }
         echo view('templates/header');
         echo view('home/index');
-        echo view('templates/footer');
+        echo view('templates/footer',$data);
 
 
 
@@ -21,12 +25,34 @@ class Home extends BaseController
 
     }
 
-    public function about_me()
+    public function home($lang='en')
+    {
+        if(isset($lang)){
+            $data["idioma"] = $lang; 
+         }else{
+             $data["idioma"] = ""; 
+         }
+        echo view('templates/header');
+        echo view('home/index');
+        echo view('templates/footer',$data);
+
+
+
+        //return view('sidebar');
+
+    }
+
+    public function about_me($lang='en')
     {
 
+        if(isset($lang)){
+           $data["idioma"] = $lang; 
+        }else{
+            $data["idioma"] = ""; 
+        }
         echo view('templates/header');
         echo view('about_me/about_me');
-        echo view('templates/footer');
+        echo view('templates/footer',$data);
 
 
 
@@ -34,12 +60,17 @@ class Home extends BaseController
 
     }
 
-    public function contact()
+    public function contact($lang='en')
     {
 
+        if(isset($lang)){
+            $data["idioma"] = $lang; 
+         }else{
+             $data["idioma"] = ""; 
+         }
         echo view('templates/header');
         echo view('contact/index');
-        echo view('templates/footer');
+        echo view('templates/footer',$data);
 
 
 
