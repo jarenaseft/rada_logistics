@@ -6,6 +6,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RADA LOGISTICS</title>
+    <link rel="icon" type="image/ico" href="<?php echo base_url() ?>/img/favicon.ico" />
+    <meta name="description" content="Official website of RADA LOGISTICS">
+    <meta name="keywords" content="rada, logistics, logistica, logistica rosarito,">
+    <meta name="author" content="Rada Logistics">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
