@@ -126,7 +126,7 @@
             }
         },
         beforeMount() {
-
+            this.getJsons();
             if (this.param_lang.trim() === '') {
                 this.default_language = 'en';
                 this.info = this.languages.en;
@@ -146,6 +146,22 @@
             }
         },
         methods: {
+            getJsons(){
+                axios.get(this.url + "/json_info/english.json")
+                    .then(response => {
+                        console.log(response.data);
+                        this.languages.en=response.data;
+                        //  this.showAlert(response.data.msg, response.data.code);
+                        //               this.mensaje=response.msg;
+                    }),
+                    axios.get(this.url + "/json_info/spanish.json")
+                    .then(response => {
+                        console.log(response.data);
+                        this.languages.es=response.data;
+                        //  this.showAlert(response.data.msg, response.data.code);
+                        //               this.mensaje=response.msg;
+                    })
+            },
             change_lang(lang) {
                 if (lang == 'en') {
                     this.default_language = 'es';
